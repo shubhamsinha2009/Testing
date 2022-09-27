@@ -1,28 +1,41 @@
 
-import java.util.*;
-
 public class App {
     public static void main(String[] args) throws Exception {
-      // Variables
 
-int a = 10 ;
-int b = 25;
-int sum = a +b;
-System.out.println(sum);
-int difference=  a-b;
-System.out.println(difference);
+    // Draw patterns given 
+int n = 4 ;
 
-int mul = a*b;
-System.out.println(mul);
+for (int i = 1; i <= n; i++) {
+   
+    for (int j = 1; j <= n-i; j++) {
+        System.out.print(" ");
+    }
+    for (int j = 1; j < 2*i;j++ ){
+       
+            System.out.print("*");
+ 
+    }
+    System.out.println("");
+
+}
+
+for (int i = n-1; i >= 1; i--) {
+   
+    for (int j = 1; j <= n-i; j++) {
+        System.out.print(" ");
+    }
+    int end = (2*i)-1;
+    for (int j = 1; j <= end ; j++ ){
+       
+            System.out.print("*");
+ 
+    }
+    System.out.println("");
+
+}
 
 
-   // Input
 
-   Scanner scanner = new Scanner(System.in);
-
-   String name = scanner.nextLine();
-
-   System.out.println(name);
 
     }
 }
